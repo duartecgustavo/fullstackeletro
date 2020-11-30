@@ -27,7 +27,7 @@ O FullStackEletro é um projeto de contrução de uma loja virtual totalmente fe
 </div>
 
 <div align="center">
- <img width="100px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/100674414-dab43280-3343-11eb-97ac-7b2e9f622ff5.png)">
+ <img width="100px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/100674414-dab43280-3343-11eb-97ac-7b2e9f622ff5.png">
 </div>
 
 * Linguagem de marcação - HTML.
