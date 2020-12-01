@@ -1,0 +1,6 @@
+main {
+    height: 80vh;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+}

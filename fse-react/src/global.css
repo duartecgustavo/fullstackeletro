@@ -1,0 +1,7 @@
+header {
+    background-color: blue;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}

@@ -1,0 +1,12 @@
+footer{
+    height: 10vh;
+    font-size: 110%;
+    background-color: rgb(37, 37, 37);
+    position: absolute;
+}
+
+.text-footer{
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    color: rgb(224, 224, 224);
+}
