@@ -1,0 +1,48 @@
+.space-lojas-top{
+    height: 156px;
+}
+.space-lojas-botton{
+    height: 156px;
+}
+.lojaSP{
+    background-color: #ffffff;
+    box-shadow: 4px 4px 2px black;
+}
+/* Loja SP */
+.lojaSP-tittle{
+    color: #DB465A;
+}
+.text-loja-sp{
+    color: #252525;
+}
+.tell-loja-sp{
+    color: #252525;
+}
+/*  loja Rio */
+.lojaRio{
+    background-color: #ffffff;
+    box-shadow: 4px 4px 2px black;
+}
+.lojaRio-tittle{
+    color: #DB465A;
+}
+.text-loja-rio{
+    color: #252525
+}
+.tell-loja-rio{
+    color: #252525
+}
+/* Loja Salvador */
+.lojaSalvador{
+    background-color:#ffffff;
+    box-shadow: 4px 4px 2px black;
+}
+.lojaSalvador-tittle{
+    color: #DB465A;
+}
+.text-loja-salvador{
+    color: #252525;
+}
+.tell-loja-salvador{
+    color: #252525;
+}

@@ -13,7 +13,7 @@ const Header = () => {
         <nav className="desktop nav d-flex align-items-center bg-danger">
             
             <Link className="link-img-header col-4 col-sm-4 col-md-4 col-lg-4 d-flex align-items-center justify-content-left" to="/">
-                <img src={logo } className="img-header col-lg-5 p-2" />
+                <img src={logo} className="img-header col-lg-5 p-2" />
             </Link>
 
             <div className="row col-lg-8 justify-content-end">

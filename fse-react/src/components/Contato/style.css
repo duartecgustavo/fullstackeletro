@@ -1,0 +1,19 @@
+.bg-size-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 78vh;
+}
+.text-contato{
+    color:#DC3545;
+    font-weight: 800;
+}
+.form-contato{
+    background-color: #ffffff;
+    box-shadow: 5px 5px 2px black;
+}
+.btn-formulario{
+    width: 100%;
+    border: 3px solid #DC3545;
+    color: #DC3545;
+}

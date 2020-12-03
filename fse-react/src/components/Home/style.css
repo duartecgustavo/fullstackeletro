@@ -1,0 +1,39 @@
+.b-radius{
+    border-radius: 20px;
+}
+
+/* Login */
+.bg-container-login{
+    border-radius: 30px;
+    background-color:hsla(0, 0%, 88%, 0.3);
+}
+.bg-container-campos{
+    border-radius: 30px; 
+    background-color:#292929;
+    box-shadow: 3px 3px 3px black;
+}
+.text-login{
+    font-family: 'Rubik', sans-serif;
+    color: #E0E0E0;
+}
+.text-label-email{
+    font-family: 'Rubik', sans-serif;
+    color: #E0E0E0;
+}
+.imput-email{
+    background-color: rgb(223, 223, 223);
+}
+.text-label-senha{
+    font-family: 'Rubik', sans-serif;
+    color: #E0E0E0;
+}
+.imput-senha{
+    background-color: rgb(223, 223, 223);
+}
+.btn-logar{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid#DC3545;
+    color: #DC3545;
+    font-weight: bold;
+}
