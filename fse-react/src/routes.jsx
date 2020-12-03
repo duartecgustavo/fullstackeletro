@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 import HomePage from './views/Home';
 import NossasLojas from './views/Lojas';
 import Products from './views/Produtos';
+import PaginaContatos from './views/Contato';
 import notFound from './views/notFound';
 
 
@@ -15,6 +16,7 @@ const MainRoutes = () => {
             <Route path="/" element={<HomePage/>} />
             <Route path="/lojas" element={<NossasLojas/>} />
             <Route path="/produtos" element={<Products/>} />
+            <Route path="/contatos" element={<PaginaContatos/>} />
             <Route path="*" element={<notFound/>} />
             
         </Routes>
