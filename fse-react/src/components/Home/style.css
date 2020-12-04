@@ -37,3 +37,19 @@
     color: #DC3545;
     font-weight: bold;
 }
+/* Promoções Login */
+.img-banner-promocao{
+    box-shadow: 3px 3px 3px black;
+}
+.banner-min{
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+}
+.banner-min2{
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px black;
+}
+.banner-min3{
+    width: 560px;
+    box-shadow: 3px 3px 3px black;
+}

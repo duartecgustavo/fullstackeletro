@@ -1,0 +1,32 @@
+/* Menu Categorias */
+.menu-categoria{
+    height: 8vh;
+    border-radius:10px;
+    background-color: #252525;
+}
+.text-categoria{
+    font-size: 20px;
+    color: #E0E0E0;
+}
+/* <div key={item.id_produto} className="row">
+<div id={item.categoria} className="col-lg-3">
+    <h1>{item.descricao}</h1>
+    <p>{item.id_produto}</p>
+    <p>{item.categoria}</p>
+    <p>{item.preco}</p>
+    <img className="img-thumbnail" src={item.imagem} />
+</div>
+</div> */
+/* Produtos */
+.img-prod{
+    width: 200px;
+    height: 170px;
+}
+.text-preco{
+    font-size: 1.4rem;
+    color:#DC3545;
+}
+.container-prod{
+    background-color: white;
+    box-shadow: 3px 3px 3px black;
+}

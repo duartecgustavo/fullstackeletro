@@ -5,6 +5,11 @@ import banner2 from '../../assets/home/BannerHome2.svg';
 import banner3 from '../../assets/home/BannerHome3.svg';
 import imgLogin from '../../assets/home/imglogin.svg';
 
+import bannerHome from '../../assets/home/banner1-home.png';
+import bannerMin from '../../assets/home/banner-home-min.jpg';
+import bannerMin2 from '../../assets/home/banner-menor-min2.jpg';
+import bannerMin3 from '../../assets/home/banner-contagem.png';
+
 import './style.css';
 
 const Home = () => {
@@ -41,6 +46,35 @@ const Home = () => {
                         <span className="sr-only">Next</span>
                     </a>
                 </div>
+            </div>
+            <div className="container">
+
+                <div className="row">
+
+                    <div className="col-lg-5 d-flex align-items-center justify-content-center">
+                        <img className="img-banner-promocao" src={bannerHome} />
+                    </div>
+
+
+                    <div className="col-lg-7 container-fluid">
+
+                        <div className="col-lg-12 d-flex justify-content-center">
+                            <div className="desktop mx-2 mb-3">
+                                <img className="banner-min" src={bannerMin} />
+                            </div>
+
+                            <div className="desktop mx-2 mb-3">
+                                <img className="banner-min2" src={bannerMin2} />
+                            </div>
+
+                        </div>
+                        <div className="col-lg-12 d-flex justify-content-center">
+                            <img className="banner-min3 mt-2" src={bannerMin3} />
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
 

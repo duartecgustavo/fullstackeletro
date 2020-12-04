@@ -6,7 +6,7 @@ abstract class Connection
     {
 
         $conn = new PDO(
-            "mysql:host=localhost;dbname=fseletro-v2;charset=utf8",
+            "mysql:host=localhost;dbname=fseletro_v3;charset=utf8",
             "root",
             ""
         );
