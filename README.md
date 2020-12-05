@@ -32,9 +32,9 @@ O FullStackEletro é um projeto de contrução de uma loja virtual totalmente fe
 
 * Linguagem de marcação - HTML.
 * Design e Responsividade - CSS + Bootstrap.
-* Backend (conexão com banco de dados) -.
+* Backend (conexão com banco de dados) - PDO e comunicação em JSON.
 * Otimização - React + JSX(Babel).
-* Javascript - puro.
+* Javascript - Puro.
 
 > Esta segunda versão já apresenta mudanças importantes como a utilização da **biblioteca bootstrap** para dar responsividade ao site e também da linguagem **PHP + Banco de Dados** para criar um site completo.
 
@@ -45,8 +45,8 @@ O FullStackEletro é um projeto de contrução de uma loja virtual totalmente fe
 Nesta primeira versão do FullStackEletro implementei o básico que aprendi das técnologias acima.
 
 - [ ] Responsividade.
-- [ ] Restruturação completa do site com **bootstrap + css**.
-- [ ] Conexão com banco de dados usando **PHP**.
+- [x] Restruturação completa do site com **bootstrap + css**.
+- [x] Conexão com banco de dados usando **PHP**.
 
 ### Link para o site: [<img width="30px" src="https://user-images.githubusercontent.com/65131471/99868564-4bb85500-2ba2-11eb-8f59-0d3882add388.png">](https://duartecgustavo.github.io/fullstackeletro.github.io/)
 
