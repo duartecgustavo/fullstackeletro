@@ -2,11 +2,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 78vh;
 }
 .text-contato{
     color:#DC3545;
     font-weight: 800;
+    text-shadow: 2px 2px black;
 }
 .form-contato{
     background-color: #ffffff;

@@ -16,7 +16,7 @@ const MsgList = () => {
         <>
             {   msg.map(row =>{
                 return(
-                    <div key={row.id} className="form-contato card msg">
+                    <div key={row.id} className="form-contato card msg my-3">
                         <div className="card-body">
                             <h5 className="card-title">{row.nome}</h5>
                             <p className="card-text">{row.msg}</p>
