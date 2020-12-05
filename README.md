@@ -48,7 +48,7 @@ Nesta primeira versão do FullStackEletro implementei o básico que aprendi das 
 - [x] Restruturação completa do site com **bootstrap + css**.
 - [x] Conexão com banco de dados usando **PHP**.
 
-### Link para o site: [<img width="30px" src="https://user-images.githubusercontent.com/65131471/99868564-4bb85500-2ba2-11eb-8f59-0d3882add388.png">](https://duartecgustavo.github.io/fullstackeletro.github.io/)
+### Link para o site: [<img width="30px" src="#">] - **Ainda indisponivel*.
 
 ---
 
