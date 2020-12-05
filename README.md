@@ -36,7 +36,7 @@ O FullStackEletro é um projeto de contrução de uma loja virtual totalmente fe
 * Otimização - React + JSX(Babel).
 * Javascript - Puro.
 
-> Esta terceira versão já apresenta otimizações como a implementação do React(JSX) para dar um tempo de resposta absurdo em todas as paginas. Está tecnologia é de componentização que o React trás é o que existe de mais atual no mercado de desenvolvimento web.
+> Esta terceira versão já apresenta otimizações como a implementação do React(JSX) para dar um tempo de resposta absurdo em todas as paginas da aplicação. Esta tecnologia de componentização com React é o que existe de mais atual no mercado de desenvolvimento web.
 
 ---
 
