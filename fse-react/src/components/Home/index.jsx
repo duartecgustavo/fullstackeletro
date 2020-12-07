@@ -10,6 +10,8 @@ import bannerMin from '../../assets/home/banner-home-min.jpg';
 import bannerMin2 from '../../assets/home/banner-menor-min2.jpg';
 import bannerMin3 from '../../assets/home/banner-contagem.png';
 
+import { Link } from 'react-router-dom';
+
 import './style.css';
 
 const Home = () => {
@@ -98,7 +100,7 @@ const Home = () => {
                                 <div className="form-group">
                                     <label className="text-label-senha" for="exampleInputPassword1">Senha</label>
                                     <input type="password" className="imput-senha form-control" name="senha" id="exampleInputPassword1" placeholder="digite sua senha"/>
-                                    <a className="form-text text-muted" href="./cadastro.html">Cadastre-se aqui!</a>
+                                    <Link className="form-text text-muted" to="/cadastro">Cadastre-se aqui!</Link>
                                 </div>
 
                                 <button type="submit" className="btn btn-logar">

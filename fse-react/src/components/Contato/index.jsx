@@ -10,6 +10,19 @@ import MsgList from './MsgList';
 import './style.css';
 
 const Contatos = () => {
+    // sentMessage
+    const sentMessage = (event) => {
+        event.preventDefault();
+        // console.log(event.target);
+        let formData = new FormData(event.target)
+
+        const url = "http://localhost/FullStackEletro-v3/fse-react/backend/sentMessage.php";
+
+        fetch(url, {
+            method: "POST",
+            body: formData
+        })}
+
     return(
 
         <>
@@ -22,16 +35,11 @@ const Contatos = () => {
 
                     <div className="row d-flex align-items-center justify-content-center;">
                         
-                        <form className="form-contato col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 p-4 mx-auto" action="../../../backend/model/fasd.php" method="post">
+                        <form className="form-contato col-12 col-sm-12 col-md-8 col-lg-4 col-xl-4 p-4 mx-auto" onSubmit={sentMessage}>
                             
                             <div className="form-group">
                                 <label for="exampleInputEmail1">E-mail</label>
-                                <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="digite seu email"/>
-                            </div>
-
-                            <div className="form-group">
-                                <label for="exampleInputPassword1">Senha</label>
-                                <input type="password" className="form-control" id="exampleInputPassword1" placeholder="digite sua senha"/>
+                                <input type="email" className="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="digite seu email"/>
                             </div>
 
                             <div>
@@ -40,7 +48,7 @@ const Contatos = () => {
                             </div>
 
                             <div>
-                                <button type="submit" className="btn-formulario btn mt-3 font-weight-bold">ENVIAR</button>
+                                <button className="btn-formulario btn mt-3 font-weight-bold">ENVIAR</button>
                             </div>
 
                             <div className="text-center mt-4">

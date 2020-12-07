@@ -4,14 +4,8 @@ require_once ("./Connection.php");
 
 class Msg extends Connection
 {
-    // private $name;
-    // private $msg;
-
-    // public function Message($name, $msg){
-    //     $this->name = $name;
-    //     $this->msg = $msg;
-    // }
-    
+    public $email;
+    public $msg;
 
     public static function getAll()
     {
@@ -32,12 +26,15 @@ class Msg extends Connection
         echo json_encode($json);
     }
 
-    // public static function newMsg($name, $msg)
-    // {
-    //     $conn = Connection::getDb();
-    //     $stmt = $conn->prepare("INSERT INTO comentarios(nome, msg) VALUES (?, ?)");
-    //     $stmt->bindParam(1, $name);
-    //     $stmt->bindParam(2, $msg);
-    //     $stmt->execute();
-    // }
+    public function newMsg()
+    {
+        $conn = Connection::getDb();
+
+        $stmt = $conn->query("INSERT INTO comentarios(nome, msg) VALUES ('$this->email', '$this->msg')");
+        if ($stmt->rowCount() > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

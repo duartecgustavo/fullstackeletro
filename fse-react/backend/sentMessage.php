@@ -1,9 +1,8 @@
 <?php
-    // require_once('./model/msg.php');
+require_once("./model/msg.php");
 
-    // if (isset($_POST['name']) && isset($_POST['msg'])){
-    //     $name = $_POST['name'];
-    //     $msg = $_POST['msg'];
+$msg = new Msg;
+$msg->email = $_POST['email'];
+$msg->msg = $_POST['comentario'];
 
-    //     $msg = Msg::newMsg($name, $msg);
-    // }
+$msg->newMsg();
