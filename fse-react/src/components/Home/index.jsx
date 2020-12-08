@@ -11,16 +11,15 @@ import bannerMin2 from '../../assets/home/banner-menor-min2.jpg';
 import bannerMin3 from '../../assets/home/banner-contagem.png';
 
 import { Link } from 'react-router-dom';
-
 import './style.css';
 
 const Home = () => {
-    return(
+    return (
 
         <>
 
             {/*  CARROSEL  */}
-            <div className="container col-sm-10 col-md-10 col-lg-10 col-xl-10 my-4">
+            <div className="desktop container col-sm-10 col-md-10 col-lg-10 col-xl-10 my-4">
 
                 <div id="carouselExampleIndicators" className="shadow carousel slide shadow" data-ride="carousel"   >
                     <ol className="carousel-indicators">
@@ -49,9 +48,10 @@ const Home = () => {
                     </a>
                 </div>
             </div>
+
             <div className="container">
 
-                <div className="row">
+                <div className="row mt-4">
 
                     <div className="col-lg-5 d-flex align-items-center justify-content-center">
                         <img className="img-banner-promocao" src={bannerHome} />
@@ -70,7 +70,7 @@ const Home = () => {
                             </div>
 
                         </div>
-                        <div className="col-lg-12 d-flex justify-content-center">
+                        <div className="desktop col-lg-12 d-flex justify-content-center">
                             <img className="banner-min3 mt-2" src={bannerMin3} />
                         </div>
 
@@ -79,45 +79,47 @@ const Home = () => {
 
             </div>
 
+            <div className="mx-3    ">
 
-            <div className="bg-container-login container my-5 p-0">
+                <div className="bg-container-login container my-5 p-0">
 
-                <div className="row">
-        
-                    <div className="d-flex align-items-center justify-content-center col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div className="row">
 
-                        <div className="bg-container-campos container p-5">
+                        <div className="d-flex align-items-center justify-content-center col-sm-12 col-md-12 col-lg-6 col-xl-6">
 
-                            <h1 className="text-login text-center pb-4">LOGIN</h1>
+                            <div className="bg-container-campos container p-5">
 
-                            <form action="./conexao_BD/loginUsuario.php" method="post">
+                                <h1 className="text-login text-center pb-4">LOGIN</h1>
 
-                                <div className="form-group">
-                                    <label className="text-label-email" for="exampleInputEmail1">Endereço de email</label>
-                                    <input type="email" className="imput-email form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="digite seu email"/>
-                                </div>
+                                <form action="./conexao_BD/loginUsuario.php" method="post">
 
-                                <div className="form-group">
-                                    <label className="text-label-senha" for="exampleInputPassword1">Senha</label>
-                                    <input type="password" className="imput-senha form-control" name="senha" id="exampleInputPassword1" placeholder="digite sua senha"/>
-                                    <Link className="form-text text-muted" to="/cadastro">Cadastre-se aqui!</Link>
-                                </div>
+                                    <div className="form-group">
+                                        <label className="text-label-email" for="exampleInputEmail1">Endereço de email</label>
+                                        <input type="email" className="imput-email form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="digite seu email" />
+                                    </div>
 
-                                <button type="submit" className="btn btn-logar">
-                                    LOGAR
-                                </button>
-                            </form>
+                                    <div className="form-group">
+                                        <label className="text-label-senha" for="exampleInputPassword1">Senha</label>
+                                        <input type="password" className="imput-senha form-control" name="senha" id="exampleInputPassword1" placeholder="digite sua senha" />
+                                        <Link className="form-text text-muted" to="/cadastro">Cadastre-se aqui!</Link>
+                                    </div>
+
+                                    <button type="submit" className="btn btn-logar">
+                                        LOGAR
+                                    </button>
+                                </form>
+                            </div>
+
                         </div>
+                        <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 ml-0">
 
-                    </div>
-                    <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 ml-0">
+                            <img className="img-fluid p-4" src={imgLogin} alt="Imagem de capa do card" />
 
-                        <img className="img-fluid p-4" src={imgLogin} alt="Imagem de capa do card"/>
+                        </div>
 
                     </div>
 
                 </div>
-
             </div>
 
         </>

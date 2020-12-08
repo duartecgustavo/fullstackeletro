@@ -1,11 +1,11 @@
 .form{
     width: 80%;
-    background-color:#d6a2a9;
+    background-color:rgb(41, 41, 41, 0.9);
     box-shadow: 3px 3px 2px black;
     border-radius: 10px;
 }
 .text-cadastro{
-    color: #DC3545;
+    color: #F5F5F5;
 }
 .botao-cadastro{
     width: 100%;
@@ -14,4 +14,7 @@
 }
 .img-cadastro{
     width: 85%;
+}
+.text-color{
+    color: #F5F5F5;
 }

@@ -40,6 +40,7 @@
 /* Promoções Login */
 .img-banner-promocao{
     box-shadow: 3px 3px 3px black;
+    width: 100%;
 }
 .banner-min{
     border-radius: 10px;
