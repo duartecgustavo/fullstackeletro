@@ -23,9 +23,9 @@ O FullStackEletro é um projeto de contrução de uma loja virtual totalmente fe
 
 <div align="center">
  <img width="100px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/99868358-a05ad080-2ba0-11eb-9366-23089497815b.png">
- <img width="100px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/99868359-a18bfd80-2ba0-11eb-9643-d37d0a606f46.png">
+ <img width="100px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/104983715-138b9200-59ec-11eb-9e1f-e31e3f925a18.png">
 </div>
-
+https://user-images.githubusercontent.com/65131471/99868359-a18bfd80-2ba0-11eb-9643-d37d0a606f46.png
 <div align="center">
  <img width="100px" style="margin: 10px 40px 10px 40px;" src="https://user-images.githubusercontent.com/65131471/100674414-dab43280-3343-11eb-97ac-7b2e9f622ff5.png">
 </div>
