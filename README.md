@@ -31,21 +31,22 @@ O FullStackEletro é um projeto de contrução de uma loja virtual totalmente fe
 
 * Linguagem de marcação - HTML.
 * Design e Responsividade - CSS + Bootstrap.
-* Backend (conexão com banco de dados) - PDO e comunicação em JSON.
-* Otimização - React + JSX(Babel).
+* Backend em NodeJS + conexão com banco de dados MySQL - comunicação em JSON.
+* Otimizações - React + JSX(Babel) e servidor feito em NodeJS no modeelo CRUD.
 * Javascript - Puro.
 
 > Esta terceira versão já apresenta otimizações como a implementação do React(JSX) para dar um tempo de resposta absurdo em todas as paginas da aplicação. Esta tecnologia de componentização com React é o que existe de mais atual no mercado de desenvolvimento web.
+> Além disso o backend do projeto foi otimizado para NodeJS vizando uma melhor comunicação com a tecnologia React realizando a comunicação inteiramente por JSON. 
 
 ---
 
 ## Implementações :wrench:
 
-Nesta primeira versão do FullStackEletro implementei o básico que aprendi das técnologias acima.
+Nesta terceira versão do FullStackEletro implementei o básico que aprendi das técnologias acima.
 
-- [ ] Responsividade.
+- [x] Responsividade.
 - [x] Restruturação completa do site com **bootstrap + css**.
-- [x] Conexão com banco de dados usando **PHP**.
+- [x] Conexão com banco de dados usando **NodeJS**.
 
 ### Link para o site: [<img width="30px" src="#">] - *Ainda indisponivel*.
 
