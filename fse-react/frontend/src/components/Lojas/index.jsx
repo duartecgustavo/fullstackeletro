@@ -10,7 +10,6 @@ const Lojas = () => {
     return (
 
         <>
-
             <div className="desktop space-lojas-top container"></div>
 
             <div className="container-fluid d-flex">
@@ -56,11 +55,7 @@ const Lojas = () => {
             </div>
 
             <div className="desktop space-lojas-botton container"></div>
-
-
-
         </>
-
     );
 }
 

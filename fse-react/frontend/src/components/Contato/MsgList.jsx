@@ -4,9 +4,10 @@ import './style.css';
 
 const MsgList = () => {
     const [msg, setMsg] = useState([]);
+    
 
     useEffect(async () => {
-        const url = "http://localhost/FullStackEletro-v3/fse-react/backend/api_msg.php";
+        const url = "http://localhost:5000/mensagens";
         const res = await fetch(url);
         setMsg(await res.json());
     }, [])

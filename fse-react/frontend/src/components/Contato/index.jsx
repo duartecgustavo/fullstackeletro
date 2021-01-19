@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 
 import email from '../../assets/contatos/email.svg';
 import github from '../../assets/contatos/github.svg';
@@ -10,18 +11,25 @@ import MsgList from './MsgList';
 import './style.css';
 
 const Contatos = () => {
+    const [name, setName] = useState("");
+    const [message, setMessage] = useState("");
     // sentMessage
     const sentMessage = (event) => {
         event.preventDefault();
         // console.log(event.target);
-        let formData = new FormData(event.target)
+        let form = {
+            nome: name,
+            msg: message
+        }
 
-        const url = "http://localhost/FullStackEletro-v3/fse-react/backend/sentMessage.php";
+        const url = "http://localhost:5000/mensagens";
 
         fetch(url, {
             method: "POST",
-            body: formData
-        })}
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(form)
+        })
+    }
 
     return(
 
@@ -39,12 +47,14 @@ const Contatos = () => {
                             
                             <div className="form-group">
                                 <label for="exampleInputEmail1">E-mail</label>
-                                <input type="email" className="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="digite seu email"/>
+                                <input type="email" className="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="digite seu email"
+                                value={name} onChange= {event => setName(event.target.value)}/>
                             </div>
 
                             <div>
                                 <label for="validationTextarea">Mensagem</label>
-                                <textarea className="form-control" id="validationTextarea" name="comentario" placeholder="O que está pensando?"></textarea>
+                                <textarea className="form-control" id="validationTextarea" name="comentario" placeholder="O que está pensando?"
+                                value={message}  onChange= {event => setMessage(event.target.value)}></textarea>
                             </div>
 
                             <div>

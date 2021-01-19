@@ -6,59 +6,62 @@ const SelectProducts = () => {
 
     useEffect(async () => {
         const res = await fetch(
-            "http://localhost/FullStackEletro-v3/fse-react/backend/api.php"
+            "http://localhost:5000/produtos"
         );
-        setProds(await res.json());
+        const data = await res.json();
+        setProds(data);
     }, []);
 
-    const categoria = prods.map(element => {
-        const obj = {}
-        obj["id"] = element.id_categoria;
-        obj["categoria"] = element.categoria;
-        return obj;
+    // create array with category and id
+    const category = prods.map(category => {
+        const container = {};
+        container['id'] = category.id_categoria; // get id_category
+        container['name'] = category.categoria; // get name_category
+        return container;
     })
-    console.log(categoria);
-    const categoriaLimpa = [...new Set(categoria.map(JSON.stringify))].map(JSON.parse);
-    console.log(categoriaLimpa);
-    console.log(categoria.id_categoria)
+
+    // remove duplicates values from container
+    const category_simple = category.map(JSON.stringify).reverse()
+        .filter(function (item, index, arr) { return arr.indexOf(item, index + 1) === -1; })
+        .reverse().map(JSON.parse);
 
     let filtro = document.getElementsByClassName("box-item");
 
     function filtroProd(event) {
         let item = event.target.id;
-        console.log(item);
-        // for (let i = 0; i < filtro.length; i++) {
-        //     if (item == filtro[i].id) {
-        //         filtro[i].style.display = "block";
-        //     }
-        //     else {
-        //         filtro[i].style.display = "none";
-        //     }
-        // }
+
+        for (let i = 0; i < filtro.length; i++) {
+            if (item == filtro[i].id) {
+                filtro[i].style.display = "block";
+            }
+            else {
+                filtro[i].style.display = "none";
+            }
+        }
     }
 
-    // function todasCategorias() {
-    //     for (let i = 0; i < filtro.length; i++) {
-    //         filtro[i].style.display = "block";
-    //     }
-    // }
+    function todasCategorias() {
+        for (let i = 0; i < filtro.length; i++) {
+            filtro[i].style.display = "block";
+        }
+    }
 
     return (
 
         <>
             <nav className="menu-categoria desktop container d-flex align-items-center justify-content-center mt-4 shadow">
-            <div className="row">
-
-
                 <div className="row">
-                {/* <a className="text-categoria font-weight-bold text-white text-center mx-3" onclick={todasCategorias}>TODOS</a> */}
-                <a className="text-categoria font-weight-bold text-white text-center mx-3" onclick={filtroProd}>GELADEIRAS</a>
-                <a className="text-categoria font-weight-bold text-white text-center mx-3" onclick={filtroProd}>FOGÕES</a>
-                <a className="text-categoria font-weight-bold text-white text-center mx-3" onclick={filtroProd}>LAVA-ROUPA</a>
-                <a className="text-categoria font-weight-bold text-white text-center mx-3" onclick={filtroProd}>MICROONDAS</a>
-                <a className="text-categoria font-weight-bold text-white text-center mx-3" onclick={filtroProd}>FREEZER</a>
-                <a className="text-categoria font-weight-bold text-white text-center mx-3">EXAUSTORES</a>
-                </div>
+
+
+                    <div className="row">
+                        <a className="text-categoria font-weight-bold text-white text-center mx-3" onClick={todasCategorias}>TODOS</a>
+                        {category_simple.map(category => {
+                            return (
+                                <a key={category.id} id={category.id} className="text-categoria font-weight-bold text-white text-center mx-3" onClick={filtroProd}>{category.name}</a>
+                            )
+                        })}
+
+                    </div>
 
                 </div>
             </nav>
