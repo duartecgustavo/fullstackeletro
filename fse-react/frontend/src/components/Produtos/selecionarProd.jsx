@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Carrinho from "../../assets/carrinho.svg"
 //import API from './API_Products';
 
 const SelectProducts = () => {
@@ -49,21 +50,19 @@ const SelectProducts = () => {
     return (
 
         <>
-            <nav className="menu-categoria desktop container d-flex align-items-center justify-content-center mt-4 shadow">
-                <div className="row">
-
-
-                    <div className="row">
+            <nav className="menu-categoria desktop container d-flex align-items-center justify-content-center mt-4 shadow p-0" >
+                    <div className="col-11 d-flex align-items-center justify-content-center">
                         <a className="text-categoria font-weight-bold text-white text-center mx-3" onClick={todasCategorias}>TODOS</a>
                         {category_simple.map(category => {
                             return (
                                 <a key={category.id} id={category.id} className="text-categoria font-weight-bold text-white text-center mx-3" onClick={filtroProd}>{category.name}</a>
                             )
                         })}
-
+                    </div>
+                    <div className="col-1  d-flex align-items-center justify-content-center h-100 bg-addcarrinho border-carrinho">
+                        <img src={Carrinho} className="img-fluid w-50" alt=""/>
                     </div>
 
-                </div>
             </nav>
         </>
     );

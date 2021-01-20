@@ -36,7 +36,8 @@ const ProdutosPagina = () => {
                     {prods.map(item => {
                         return (
                             <>
-                                <div key={item.id_produto} id={item.id_categoria} className="box-item container-prod d-flex flex-column justify-content-between col-sm-10 col-md-4 col-lg-3 col-xl-3 mx-4 my-2">
+                                <div key={item.id_produto} id={item.id_categoria} className="box-item container-prod col-sm-10 col-md-4 col-lg-3 col-xl-3 mx-4 my-2">
+                                    <div className="d-flex flex-column justify-content-between">
                                     <div className="d-flex-column h-100">
                                         <img className="img-prod img-thumbnail col-10" onMouseOver={destaque} onMouseOut={redimenciona} src={item.imagem} />
                                         <p className="text-muted">{item.descricao}</p>
@@ -51,7 +52,7 @@ const ProdutosPagina = () => {
                                             <a className="text-addcarrinho"><p className="row my-auto font-weight-bold text-white">Adicionar ao carrinho</p></a>
                                         </div>
                                     </div>
-
+                                    </div>
                                 </div>
                             </>
                         )

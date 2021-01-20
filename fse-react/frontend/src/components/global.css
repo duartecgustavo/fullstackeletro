@@ -6,7 +6,10 @@
     background-color:#DC3545;
 }
 /* scrollbar */
-
+.teste{
+    display: flex;
+    vertical-align: bottom;
+}
 body::-webkit-scrollbar {
     background-color: #DC3545;
     width: 8px;

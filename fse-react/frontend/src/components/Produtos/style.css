@@ -1,6 +1,7 @@
 /* Menu Categorias */
 .menu-categoria{
     height: 8vh;
+    width: 85vw;
     border-radius:10px;
     background-color: #252525;
 }
@@ -29,4 +30,7 @@
 }
 .bg-addcarrinho{
     background-color:#DC3545;
+}
+.border-carrinho{
+    border-radius:0px 10px 10px 0px;
 }
