@@ -1,15 +1,19 @@
 import React, { useState, useEffect } from 'react';
 
+import { useSelector, useDispatch} from 'react-redux';
+import cartActions from '../store/actions/index'
+
 import SelectProducts from './selecionarProd';
 import './style.css';
 
 const ProdutosPagina = () => {
 
-    const [prods, setProds] = useState([]);
-    useEffect(async () => {
-        const res = await fetch('http://localhost:5000/produtos');
-        setProds(await res.json())
-    }, [])
+const prods = useSelector(state => state.produto)
+    // const [prods, setProds] = useState([]);
+    // useEffect(async () => {
+    //     const res = await fetch('http://localhost:5000/produtos');
+    //     setProds(await res.json())
+    // }, [])
 
     const destaque = (event) => {
         if (event.target.style.width === "300px") {
@@ -25,6 +29,8 @@ const ProdutosPagina = () => {
             event.target.style.width = "200px"
         }
     }
+
+    const dispatch = useDispatch();
     return (
         <>
 
@@ -49,7 +55,7 @@ const ProdutosPagina = () => {
                                             <p className="text-preco my-auto"><strong>R${item.preco}</strong></p>
                                         </div>
                                         <div className="bg-addcarrinho col-5 d-flex align-items-center justify-content-center border p-2">
-                                            <a className="text-addcarrinho"><p className="row my-auto font-weight-bold text-white">Adicionar ao carrinho</p></a>
+                                            <button onClick={() => dispatch(cartActions.Add())} className="text-addcarrinho"><p className="row my-auto font-weight-bold text-white">Adicionar ao carrinho</p></button>
                                         </div>
                                     </div>
                                     </div>

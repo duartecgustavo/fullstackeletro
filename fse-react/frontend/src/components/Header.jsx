@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logoSVG.svg';
 import drop from '../assets/seta-para-baixo-do-angulo.svg';
 
+import CartButton from './Cart/cartButton'
+
 import './global.css';
 
 const Header = () => {
@@ -23,6 +25,8 @@ const Header = () => {
                 <Link className="link-pages-desk font-weight-bold text-white text-center col-lg-2 bg-danger" to="/produtos">Produtos</Link>
                 <Link className="link-pages-desk font-weight-bold text-white text-center col-lg-2 bg-danger" to="/lojas">Lojas</Link>
                 <Link className="link-pages-desk font-weight-bold text-white text-center col-lg-2 bg-danger" to="/contatos">Contatos</Link>
+                <Link className="link-pages-desk font-weight-bold text-white text-center col-lg-2 bg-danger" to="/carrinho">Carrinho</Link>
+                <CartButton/>
             </div>
         </nav>
 

@@ -1,17 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Carrinho from "../../assets/carrinho.svg"
+import { useSelector } from 'react-redux';
 //import API from './API_Products';
 
 const SelectProducts = () => {
-    const [prods, setProds] = useState([]);
 
-    useEffect(async () => {
-        const res = await fetch(
-            "http://localhost:5000/produtos"
-        );
-        const data = await res.json();
-        setProds(data);
-    }, []);
+    const prods = useSelector(state => state.produto)
+    // const [prods, setProds] = useState([]);
+
+    // useEffect(async () => {
+    //     const res = await fetch(
+    //         "http://localhost:5000/produtos"
+    //     );
+    //     const data = await res.json();
+    //     setProds(data);
+    // }, []);
 
     // create array with category and id
     const category = prods.map(category => {
@@ -59,7 +62,7 @@ const SelectProducts = () => {
                             )
                         })}
                     </div>
-                    <div className="col-1  d-flex align-items-center justify-content-center h-100 bg-addcarrinho border-carrinho">
+                    <div className="col-1 d-flex align-items-center justify-content-center h-100 bg-addcarrinho border-carrinho">
                         <img src={Carrinho} className="img-fluid w-50" alt=""/>
                     </div>
 
