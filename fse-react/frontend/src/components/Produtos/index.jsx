@@ -9,6 +9,8 @@ import './style.css';
 const ProdutosPagina = () => {
 
 const prods = useSelector(state => state.produto)
+const dispatch = useDispatch();
+const value = useSelector(state => state.cart.value)
     // const [prods, setProds] = useState([]);
     // useEffect(async () => {
     //     const res = await fetch('http://localhost:5000/produtos');
@@ -30,7 +32,7 @@ const prods = useSelector(state => state.produto)
         }
     }
 
-    const dispatch = useDispatch();
+
     return (
         <>
 
@@ -55,7 +57,7 @@ const prods = useSelector(state => state.produto)
                                             <p className="text-preco my-auto"><strong>R${item.preco}</strong></p>
                                         </div>
                                         <div className="bg-addcarrinho col-5 d-flex align-items-center justify-content-center border p-2">
-                                            <button onClick={() => dispatch(cartActions.Add())} className="text-addcarrinho"><p className="row my-auto font-weight-bold text-white">Adicionar ao carrinho</p></button>
+                                            <button onClick={() => dispatch(cartActions.Add(value, item))} className="text-addcarrinho"><p className="row my-auto font-weight-bold text-white">Adicionar ao carrinho</p></button>
                                         </div>
                                     </div>
                                     </div>
