@@ -1,5 +1,3 @@
-<h1 align="center"> Versão 3 :atom_symbol: </h1>
-
 <div align="center"> <img width="250px" src="https://user-images.githubusercontent.com/65131471/99868564-4bb85500-2ba2-11eb-8f59-0d3882add388.png"></div>
 <p align="center"> Aqui programadores tem descontos em <b>TODOS</b> os produtos!</p>
 
@@ -35,7 +33,7 @@ O FullStackEletro é um projeto de contrução de uma loja virtual totalmente fe
 * Otimizações - React + JSX(Babel) e servidor feito em NodeJS no modeelo CRUD.
 * Javascript - Puro.
 
-> Esta terceira versão já apresenta otimizações como a implementação do React(JSX) para dar um tempo de resposta absurdo em todas as paginas da aplicação. Esta tecnologia de componentização com React é o que existe de mais atual no mercado de desenvolvimento web.
+> Esta versão apresenta otimizações como a implementação do React(JSX) para dar um tempo de resposta absurdo em todas as paginas da aplicação. Esta tecnologia de componentização com React é o que existe de mais atual no mercado de desenvolvimento web.
 > Além disso o backend do projeto foi otimizado para NodeJS vizando uma melhor comunicação com a tecnologia React realizando a comunicação inteiramente por JSON. 
 
 ---
