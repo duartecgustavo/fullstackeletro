@@ -6,6 +6,7 @@ import NossasLojas from './views/Lojas';
 import Products from './views/Produtos';
 import PaginaCadastro from './views/Cadastro';
 import PaginaContatos from './views/Contato';
+import PaginaCarrinho from './views/Carrinho';
 import notFound from './views/notFound';
 
 
@@ -19,6 +20,7 @@ const MainRoutes = () => {
             <Route path="/produtos" element={<Products/>} />
             <Route path="/contatos" element={<PaginaContatos/>} />
             <Route path="/cadastro" element={<PaginaCadastro/>} />
+            <Route path="/carrinho" element={<PaginaCarrinho/>} />
             <Route path="*" element={<notFound/>} />
             
         </Routes>

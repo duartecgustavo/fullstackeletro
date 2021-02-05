@@ -27,10 +27,15 @@
 }
 .text-addcarrinho{
     cursor: pointer;
+    background-color:#DC3545;
+    border: none;
+
 }
 .bg-addcarrinho{
     background-color:#DC3545;
 }
 .border-carrinho{
     border-radius:0px 10px 10px 0px;
+    border: none;
+    color: #D8B7BA;
 }

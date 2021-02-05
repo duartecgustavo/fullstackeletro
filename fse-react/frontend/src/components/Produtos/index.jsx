@@ -57,7 +57,7 @@ const value = useSelector(state => state.cart.value)
                                             <p className="text-preco my-auto"><strong>R${item.preco}</strong></p>
                                         </div>
                                         <div className="bg-addcarrinho col-5 d-flex align-items-center justify-content-center border p-2">
-                                            <button onClick={() => dispatch(cartActions.Add(value, item))} className="text-addcarrinho"><p className="row my-auto font-weight-bold text-white">Adicionar ao carrinho</p></button>
+                                            <button onClick={() => dispatch(cartActions.Add(value, item))} className="text-addcarrinho"><p className="row my-auto font-weight-bold text-white m-2" style={{fontSize:"10px"}}>Adicionar ao carrinho</p></button>
                                         </div>
                                     </div>
                                     </div>

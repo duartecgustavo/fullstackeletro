@@ -8,7 +8,6 @@ import store from './components/store';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Routes from './routes';
-import Products from './components/Products/Products'
 
 function App() {
     return (
@@ -17,7 +16,6 @@ function App() {
             <Router>
                 <Header />
                 <Routes />
-                <Products/>
                 <Footer />
             </Router>
         </Provider>

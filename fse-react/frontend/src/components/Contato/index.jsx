@@ -22,7 +22,7 @@ const Contatos = () => {
             msg: message
         }
 
-        const url = "http://localhost:5000/mensagens";
+        const url = "http://localhost:5000/comentarios";
 
         fetch(url, {
             method: "POST",
@@ -47,13 +47,13 @@ const Contatos = () => {
                             
                             <div className="form-group">
                                 <label for="exampleInputEmail1">E-mail</label>
-                                <input type="email" className="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="digite seu email"
+                                <input type="email" className="form-control" id="exampleInputEmail1" name="name" aria-describedby="emailHelp" placeholder="digite seu email"
                                 value={name} onChange= {event => setName(event.target.value)}/>
                             </div>
 
                             <div>
                                 <label for="validationTextarea">Mensagem</label>
-                                <textarea className="form-control" id="validationTextarea" name="comentario" placeholder="O que está pensando?"
+                                <textarea className="form-control" id="validationTextarea" name="message" placeholder="O que está pensando?"
                                 value={message}  onChange= {event => setMessage(event.target.value)}></textarea>
                             </div>
 

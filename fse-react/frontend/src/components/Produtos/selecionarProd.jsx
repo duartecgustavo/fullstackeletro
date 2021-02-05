@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Carrinho from "../../assets/carrinho.svg"
 import { useSelector } from 'react-redux';
+
+import CartButton from '../Cart/cartButton'
 //import API from './API_Products';
 
 const SelectProducts = () => {
@@ -62,10 +63,7 @@ const SelectProducts = () => {
                             )
                         })}
                     </div>
-                    <div className="col-1 d-flex align-items-center justify-content-center h-100 bg-addcarrinho border-carrinho">
-                        <img src={Carrinho} className="img-fluid w-50" alt=""/>
-                    </div>
-
+                    <CartButton/>
             </nav>
         </>
     );

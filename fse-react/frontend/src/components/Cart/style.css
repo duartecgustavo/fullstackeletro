@@ -1,0 +1,20 @@
+.btn-cancelar{
+    background-color: #252525;
+    color: aliceblue;
+}
+.btn-confirmar{
+    background-color: #DC3545;
+    color: aliceblue;
+}
+.btn-close{
+    background-color: #252525 !important;
+    border-radius: 3px;
+    color: aliceblue;
+}
+.modal-body-w{
+    width: 100vw !important;
+}
+.border{
+    border: none;
+    padding: 8px;
+}

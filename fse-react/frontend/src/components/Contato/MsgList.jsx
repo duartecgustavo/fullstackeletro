@@ -7,7 +7,7 @@ const MsgList = () => {
     
 
     useEffect(async () => {
-        const url = "http://localhost:5000/mensagens";
+        const url = "http://localhost:5000/comentarios";
         const res = await fetch(url);
         setMsg(await res.json());
     }, [])
