@@ -25,7 +25,7 @@ const Header = () => {
                 <Link className="link-pages-desk font-weight-bold text-white text-center col-lg-2 bg-danger" to="/produtos">Produtos</Link>
                 <Link className="link-pages-desk font-weight-bold text-white text-center col-lg-2 bg-danger" to="/lojas">Lojas</Link>
                 <Link className="link-pages-desk font-weight-bold text-white text-center col-lg-2 bg-danger" to="/contatos">Contatos</Link>
-                <Link className="link-pages-desk font-weight-bold text-white text-center col-lg-2 bg-danger" to="/carrinho">Carrinho</Link>                
+                <Link className="link-pages-desk font-weight-bold text-white text-center col-lg-2 bg-danger" to="/lazyLoading">LazyLoading</Link>                
             </div>
         </nav>
 

@@ -1,24 +1,14 @@
-import { useSelector, useDispatch } from 'react-redux';
-import cartActions from '../store/actions/index';
+import React from 'react';
+import teste from '../../assets/teste.jpg'
 
-const Products = () => {
-
-    const dispatch = useDispatch();
-    const value = useSelector(state => state.cart.value)
+const LazyLoading = () => {
 
     return (
         <div className="d-flex flex-column align-items-center justify-content-center" style={{backgroundColor:"white"}}>
-            <p>
-                Nome do Produto
-            </p>
-            <p>
-                Preço
-            </p>
-            <button onClick={() => dispatch(cartActions.Add())}>Add</button>
-            <button onClick={() => dispatch(cartActions.Remove())}>Remove</button>
-            <p>{value}</p>
+            <img className="img-fluid" src={teste} />
         </div>
+
     )
 }
 
-export default Products;
+export default LazyLoading;

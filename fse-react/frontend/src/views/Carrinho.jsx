@@ -1,12 +1,12 @@
 import React from 'react';
-import Carrinho from '../components/Products/Products';
+import LazyLoading from '../components/Products/Products';
 
-const PaginaCarrinho = () => {
+const lazyLoading = () => {
     return (
     <>
-        <Carrinho/>
+        <LazyLoading/>
     </>
     );
 }
 
-export default PaginaCarrinho;
+export default lazyLoading;
