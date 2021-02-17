@@ -2,8 +2,8 @@ module.exports = server => {
     Comments = require('../models/comentarios');
 
     server.post('/comentarios', async (req, res) => {
-        const { name, msg } = req.body;
-        const result = await Comments.create({ name, msg });
+        const { nome, msg } = req.body;
+        const result = await Comments.create({ nome, msg });
         res.send(result)
     })
 
